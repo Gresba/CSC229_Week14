@@ -12,27 +12,21 @@ public class NewClass {
             System.out.println("No Pairs exits\n");
             
         }
-        int pair;
-
-        // Intitialize max product pair
-        int num1 = arr[0], num2 = arr[1];
-       
-        // Traverse through every possible pair
-      
-        for(int i = 0; i < arr.length; i++){ 
-            for (int j = i + 1; j < n; j++){
-                if (arr[i]*arr[j] > num1 * num2){
-                    num1 = arr[i];
-                    num2 = arr[j];
-                }
+        // Highest numbers (first and second)
+        int num1 = arr[0]; 
+        int num2 = arr[1]; 
+        
+        //Loop through the rest of the arry and check for the greater numbers
+        for(int i = 2; i < n; i++) 
+        {   
+            if(arr[i] > num1 ){ 
+                num1 = arr[i];
+                
+            }else if(arr[i] > num2 ){
+                num2 = arr[i];
             }
         }
-        
-        
-        // The maxiumum pariaise pair
-        pair = num1 * num2;
-        
-        return pair;
+        return num1 * num2;
     
 }
     
