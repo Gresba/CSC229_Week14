@@ -18,6 +18,7 @@ for (int i = 0; i < line.length() && ok; i++){
     String ch = line.substring(i, i+1);
     if (ch.equals("(")){
         s.push(ch);
+        
     }
     else if (ch.equals(")")){
         if (s.empty()){
