@@ -4,6 +4,7 @@ public class ParenMatch
 {
  public static void main (String[] args)
  {
+     
 Stack s = new Stack();
 String line; // the string of characters to be checked
 Scanner scan = new Scanner(System.in);
